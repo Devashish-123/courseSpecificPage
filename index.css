@@ -847,10 +847,68 @@
 .swiper-section{
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
+    margin-top: 143px;
 }
 .swiper-container{
     width: 716px;
     height: 267px;
-    border: 0.5px solid #00000005;
-    box-shadow: 0px 1px 1px #00000026;
+    border: 0.5px solid #E3E3E3;
+    box-shadow: 0px 1px 0.75px #0000001C;
+    border-radius: 14px;
+    display: flex;
+}
+.swiper-container>div{
+    /* border: 1px solid red; */
+}
+.swiper-container h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin:78px 0px 78px 33px;
+    letter-spacing: -4%;
+}
+.swiper-container h3 span{
+    background-image: linear-gradient(to right bottom, #FFE75C, #FFC619, #FF78B9, #EB459F, #9747FF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/* swiper section ended */
+
+.salary-button-section{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+.avgSalaray, .dzgnJamSalary{
+    width: 350px;
+    height: 121px;
+    border: 0.5px solid #E3E3E3;
+    box-shadow: 0px 1px 0.75px #0000001C;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.avgSalaray h5, .dzgnJamSalary h5{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+.avgSalaray p{
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A7A7A7;
+}
+.dzgnJamSalary p{
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+}
+.dzgnJamSalary{
+    margin-left: 16px;
 }
