@@ -32,3 +32,28 @@ function btnIntensiveClick(){
     document.getElementById("igniteButton").style.fontWeight="500";
     document.getElementById("igniteLogo").src="./images/ignitDarkLogo.svg"
 }
+
+function handleTicketForm(event){
+    event.preventDefault();
+    var username = document.getElementById("txtName");
+    var useremail = document.getElementById("txtEmail");
+    var usernumber = document.getElementById("txtNumber");
+    var nameError = document.getElementById("nameError");
+    var emailError = document.getElementById("emailError");
+    var numberError = document.getElementById("numberError");
+
+    if(username.value===""){
+        nameError.innerHTML="Enter user name";
+        emailError.innerHTML="";
+        numberError.innerHTML="";
+    } 
+    else if(useremail.value===""){
+        nameError.innerHTML="";
+        emailError.innerHTML="Enter email address";
+        numberError.innerHTML="";
+    } else if(usernumber.value===""){
+        nameError.innerHTML="";
+        emailError.innerHTML="";
+        numberError.innerHTML="Enter Number";
+    }
+} 

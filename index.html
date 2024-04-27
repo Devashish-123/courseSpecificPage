@@ -26,7 +26,7 @@
     <div class="checks-image4"></div>
     <div class="checks-image5"></div>
     <div class="checks-image6"></div>
-    <div class="checks-image7"></div>
+    <div class="checks-image7"></div> 
 
     <header>
         <img src="./images/BrandLogo.svg">
@@ -74,12 +74,17 @@
         </div>
 
         <div class="right-section">
-            <form>
-                <h2>Book course overview session</h2>
+            <form onsubmit="handleTicketForm(event)">
+                <h2>Book course overview session <span class="tiltTextBeginners">< It,s free</span></h2>
 
-                <input type="text" name="txtName" placeholder="Your Name"><br>
-                <input type="text" name="txtName" placeholder="Enter Email Address"><br>
-                <input type="text" name="txtName" placeholder="Number"><br>
+                <input id="txtName" type="text" name="userName" placeholder="Your Name"><br>
+                <span id="nameError"></span>
+
+                <input id="txtEmail" type="email" name="userEmail" placeholder="Enter Email Address"><br>
+                <span id="emailError"></span>
+
+                <input id="txtNumber" type="text" name="userNumber" placeholder="Number"><br>
+                <span id="numberError"></span>
 
                 <button class="btnGetTicket">Get a Ticket <img src="./images/btnTicketVector.svg"></button>
             </form>
@@ -489,6 +494,19 @@
                 <img src="./images/cars24.svg" alt="">
                 <img src="./images/procol.svg" alt="">
             </marquee>
+        </div>
+    </div>
+    <!-- recruiter section ended -->
+
+    <div class="swiper-section">
+        <div class="swiper-container">
+            <div>
+                <h5>DzgnJam Guarantees that you will become the <span>future</span></h5>
+            </div>
+
+            <div class="scroller">
+
+            </div>
         </div>
     </div>
 

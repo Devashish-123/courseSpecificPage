@@ -22,12 +22,9 @@
 }
 .tiltTextBeginners{
     color: #9747FF;
-    top: 64%;
+    top: 64%; 
     left: 59.50%;
 }
-
-
-
 
   header{
     display: flex;
@@ -45,7 +42,6 @@
     background-size: cover;
     position: absolute;
     left: 0px;
-    border: 1px solid rgb(144, 38, 38);
     z-index: -1;
 }
 .checks-image2{
@@ -56,7 +52,6 @@
     position: absolute;
     right: 0px;
     top: 318px;
-    border: 1px solid rgb(144, 38, 38);
     z-index: -1;
 }
 .checks-image3{
@@ -68,7 +63,6 @@
     left: 127px;
     top: 706px;
     z-index: -1;
-    border: 1px solid rgb(144, 38, 38);
 }
 .checks-image4{
     width: 638px;
@@ -79,7 +73,6 @@
     right: 0px;
     top: 1077px;
     z-index: -1;
-    border: 1px solid rgb(144, 38, 38);
 }
 .checks-image5{
     width: 627px;
@@ -90,7 +83,6 @@
     right: 0px;
     top: 3249px;
     z-index: -1;
-    border: 1px solid rgb(144, 38, 38);
 }
 .checks-image6{
     width: 539px;
@@ -101,7 +93,6 @@
     left: 0px;
     top: 4637px;
     z-index: -1;
-    border: 1px solid rgb(144, 38, 38);
 }
 .checks-image7{
     width: 590px;
@@ -112,7 +103,6 @@
     right: 0px;
     top: 5220px;
     z-index: -1;
-    border: 1px solid rgb(144, 38, 38);
 }
 /* checksImages */
 
@@ -127,6 +117,7 @@
 .btnScholarShip{
     display: flex;
     align-items: center;
+    width: 319px;
     padding: 13px 8px 13px 8px;
     border: none;
     border-radius: 7px;
@@ -151,11 +142,13 @@
     font-size: 70px;
     font-weight: 500;
     margin: 41px 0px 0px 0px;
+    letter-spacing: -2px;
 }
 .hero-section-heading span{
      background-image: linear-gradient(to right bottom, #FFE75C, #FFC619, #FF78B9, #EB459F);
      -webkit-text-fill-color: transparent;
      -webkit-background-clip: text;
+     letter-spacing: -2px;
 }
 .hero-section-para{
     font-size: 18px;
@@ -248,7 +241,9 @@
     width: 100%;
     border-radius: 12px;
     border: 1px solid #B6B7BE;
-    margin-bottom: 17px;
+}
+.hero-section .right-section form input:not(:nth-child(2)){
+    margin-top: 17px;
 }
 .btnGetTicket{
     width: 167px;
@@ -704,7 +699,7 @@
 .cohort-range-section{
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 279px;
 }
 .cohort-range-section h2{
@@ -764,6 +759,7 @@
     margin-right: 7.6px;
     width: 12px;
     height: 12.8px;
+    margin-top: 3px;
 }
 .rangePercentage{
     font-size: 16px;
@@ -845,4 +841,16 @@
     height: 58px;
     margin-right: 22px;
     background-color: transparent;
+}
+/* recruiter section ended */
+
+.swiper-section{
+    display: flex;
+    justify-content: center;
+}
+.swiper-container{
+    width: 716px;
+    height: 267px;
+    border: 0.5px solid #00000005;
+    box-shadow: 0px 1px 1px #00000026;
 }
