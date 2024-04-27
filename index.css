@@ -111,7 +111,7 @@
     /* border: 1px solid red; */
     padding: 102px 179px 0px 179px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .btnScholarShip{
@@ -222,7 +222,9 @@
 }
 /* hero-section-left-container ended*/
 
-
+.hero-section .right-section{
+    margin-left: 73px;
+}
 .hero-section .right-section form{
     width: 443px;
     padding: 29px 20px 22px 20px;
