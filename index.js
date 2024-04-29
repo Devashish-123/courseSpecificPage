@@ -33,7 +33,7 @@ function btnIntensiveClick(){
     document.getElementById("igniteLogo").src="./images/ignitDarkLogo.svg"
 }
 
-function handleTicketForm(event){
+async function handleTicketForm(event){
     event.preventDefault();
     var username = document.getElementById("txtName");
     var useremail = document.getElementById("txtEmail");
@@ -43,6 +43,7 @@ function handleTicketForm(event){
     var numberError = document.getElementById("numberError");
 
     if(username.value===""){
+        username.focus();
         nameError.innerHTML="Enter user name";
         emailError.innerHTML="";
         numberError.innerHTML="";
@@ -55,5 +56,72 @@ function handleTicketForm(event){
         nameError.innerHTML="";
         emailError.innerHTML="";
         numberError.innerHTML="Enter Number";
+    } else{
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzZ_IikYjJSxwzzvh8ChoeuStExOwT2Gd4mi7_espv7KKag6W1EMtiObIhyzPQ8LDHE/exec"
+        const form = document.forms["google-sheet"];
+
+        await fetch(scriptURL, {method: "POST", body: new FormData(form)})
+        .then(response=> alert("Thanks you for contacting us, we will call you shortly..."))
+        .catch(error => console.error("Error!", error.message))
+
+        username.value="";
+        useremail.value="";
+        usernumber.value="";
+        nameError.innerHTML="";
+        emailError.innerHTML="";
+        numberError.innerHTML="";
     }
 } 
+
+
+function popupClose(){
+    document.getElementById("curriculum-form").style.display="none"
+    document.querySelector("body").style.position="static"
+}
+function popupOpen(){
+    document.getElementById("curriculum-form").style.display="flex"
+    document.querySelector("body").style.position="fixed"
+}
+
+async function handleCurriculumForm(event){
+    event.preventDefault();
+    var usernamepopup = document.getElementById("txtNamePopUp");
+    var useremailpopup = document.getElementById("txtEmailPopUp");
+    var usernumberpopup = document.getElementById("txtNumberPopUp");
+    var nameErrorpopup = document.getElementById("nameErrorPopUp");
+    var emailErrorpopup = document.getElementById("emailErrorPopUp");
+    var numberErrorpopup = document.getElementById("numberErrorPopUp");
+
+    if(usernamepopup.value===""){
+        usernamepopup.focus();
+        nameErrorpopup.innerHTML="Enter user name";
+        emailErrorpopup.innerHTML="";
+        numberErrorpopup.innerHTML="";
+    } 
+    else if(useremailpopup.value===""){
+        nameErrorpopup.innerHTML="";
+        emailErrorpopup.innerHTML="Enter email address";
+        numberErrorpopup.innerHTML="";
+    } else if(usernumberpopup.value===""){
+        nameErrorpopup.innerHTML="";
+        emailErrorpopup.innerHTML="";
+        numberErrorpopup.innerHTML="Enter Number";
+    } else{
+        const scriptURL = "https://script.google.com/macros/s/AKfycbz-lvNj7ErRTbLRa-GMk-hk6lzzgI6afeWIN9gPtupi1FSHdSZVimT5zHSeAMlCR005Xg/exec"
+        const form = document.forms["google-sheet-popup"];
+
+        await fetch(scriptURL, {method: "POST", body: new FormData(form)})
+        .then(response=> alert("Thanks you for contacting us, we will call you shortly..."))
+        .catch(error => console.error("Error!", error.message))
+
+        var pdfUrl = "./images/DzgnJamSuper30.pdf";
+        var link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "DzgnJamSuper30.pdf";
+        link.click();
+
+        document.getElementById("curriculum-form").style.display="none";
+        document.querySelector("body").style.position="static"
+    }
+}
+  

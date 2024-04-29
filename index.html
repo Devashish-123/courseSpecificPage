@@ -27,6 +27,40 @@
     <div class="checks-image5"></div>
     <div class="checks-image6"></div>
     <div class="checks-image7"></div> 
+    <div class="checks-image8"></div> 
+
+    <!-- Download Popup -->
+    <div id="curriculum-form" class="download-curriculum-popUp"  onclick="popupClose()">
+        <form id="popupForm" onsubmit="handleCurriculumForm(event)" name="google-sheet-popup">
+            <div class="popup-header">
+                <h3>Fill the details <br>to download the <br>complete curriculum</h3>
+                <button onclick="popupClose()" class="btncross"><img src="./images/cross.svg" alt=""></button>
+            </div>
+
+            <div class="popup-body">
+                <div>
+                    <input name="namePopup" placeholder="Your Name" type="text" id="txtNamePopUp">
+                    <label id="nameErrorPopUp"></label>
+                </div>
+
+                <div>
+                    <input name="emailPopup" placeholder="Enter Email Address" type="text" id="txtEmailPopUp">
+                    <label id="emailErrorPopUp"></label>
+                </div>
+
+                <div>
+                    <input name="numberPopup" placeholder="Number" type="text" id="txtNumberPopUp">
+                    <label id="numberErrorPopUp"></label>
+                </div>
+
+                <div style="display: flex; align-items: center;">
+                    <button class="btnGetTicket">Download <img class="downloadLightLogo" src="./images/downloadIconLight.svg"></button><span class="tiltTextBeginners" style="margin-top: 20px;">< It’s free</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- DownloadPopup ended -->
+
 
     <header>
         <img src="./images/BrandLogo.svg">
@@ -74,7 +108,7 @@
         </div>
 
         <div class="right-section">
-            <form onsubmit="handleTicketForm(event)">
+            <form onsubmit="handleTicketForm(event)" autocomplete="off" name="google-sheet">
                 <h2>Book course overview session <span class="tiltTextBeginners">< It,s free</span></h2>
 
                 <input id="txtName" type="text" name="userName" placeholder="Your Name"><br>
@@ -263,7 +297,7 @@
             </div>
     
             <div>
-                <button class="btn-curriculum">Download Curriculum <img src="./images/downloadIcon.svg"></button>
+                <button onclick="popupOpen()" class="btn-curriculum">Download Curriculum <img src="./images/downloadIcon.svg"></button>
             </div>
         </div>
     </div>
@@ -378,12 +412,16 @@
 
     <div class="mentor-section">
         <div class="mentor-container">
-            <img class="mentor-image" src="./images/mentorImage.png" alt="">
+            <div>
+                <img class="mentor-image" src="./images/mentorImage.png" alt="">
+                <a href="#"><img class="jayLinkedIn" src="./images/jayLinkedIn.svg"></a>
+                <a href="#"> <img class="rashmiLinkedIn" src="./images/rashmiLinkedIn.svg" alt=""></a>
+            </div>
 
             <h3>Meet our<br>Industry <img src=""><br>Mentors</h3>
             <p>Kickstart your career as a product designer (UI/UX) and grab an opportunity at top tech companies.</p>
             <p>Click their name to see the profile <img src="./images/arrow_right.svg" alt=""></p>
-        </div>
+        </div> 
     </div>
     <!-- mentor section Ended -->
 
@@ -528,7 +566,50 @@
             </div>
         </div>
     </div>
+    <!-- salary button section ended -->
 
+    <div class="review-section">
+        <div>
+            <div class="leftButton">
+                <button>
+                    <img src="./images/leftButton.svg" alt="">
+                </button>
+            </div>
+
+            <div class="student-container">
+                <h3>A Success story to share</h3>
+                <p class="review-para">“I was part of DzgnJam's first batch in Nagpur, and it was an amazing experience. They really focused on helping us learn UI/UX design in a way that made sense to us. Thanks to their help, I got my first job at Zeta, and I'm so thankful for the genuine support they provided.…”</p>
+                <div class="student-info">
+                    <img class="student-pic" src="./images/studentPic.png" alt="">
+                    <h5>Bhavna</h5>
+                    <p class="designation">UI Designer at Zeta</p>
+                    <div class="student-rating">
+                        <img src="./images/star_rate.svg" alt="">
+                        <img src="./images/star_rate.svg" alt="">
+                        <img src="./images/star_rate.svg" alt="">
+                        <img src="./images/star_rate.svg" alt="">
+                        <img src="./images/star_half.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightButton">
+                <button>
+                    <img src="./images/rightButton.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- review-section ended -->
+
+
+    <div class="certificate-section">
+        <div>
+            <h4>Verifiable Certificate<br> of Accomplishment</h4>
+            <p class="certificate-para">Upon completing the Product Designer Fellowship course, you'll receive a verifiable Certificate of Accomplishment that you can link to your Résumé and LinkedIn profile.</p>
+            <img class="certificate-image" src="./images/certificate.png">
+        </div>
+    </div>
 
     <script src="./index.js"></script>
 </body>

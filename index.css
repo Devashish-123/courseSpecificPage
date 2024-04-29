@@ -43,6 +43,7 @@
     position: absolute;
     left: 0px;
     z-index: -1;
+    /* border: 1px solid green; */
 }
 .checks-image2{
     width: 397px;
@@ -53,6 +54,7 @@
     right: 0px;
     top: 318px;
     z-index: -1;
+    /* border: 1px solid green; */
 }
 .checks-image3{
     width: 719px;
@@ -63,6 +65,7 @@
     left: 127px;
     top: 706px;
     z-index: -1;
+    /* border: 1px solid green; */
 }
 .checks-image4{
     width: 638px;
@@ -73,6 +76,7 @@
     right: 0px;
     top: 1077px;
     z-index: -1;
+    /* border: 1px solid green; */
 }
 .checks-image5{
     width: 627px;
@@ -83,6 +87,7 @@
     right: 0px;
     top: 3249px;
     z-index: -1;
+    /* border: 1px solid green; */
 }
 .checks-image6{
     width: 539px;
@@ -93,6 +98,7 @@
     left: 0px;
     top: 4637px;
     z-index: -1;
+    /* border: 1px solid green; */
 }
 .checks-image7{
     width: 590px;
@@ -103,6 +109,18 @@
     right: 0px;
     top: 5220px;
     z-index: -1;
+    /* border: 1px solid green; */
+}
+.checks-image8{
+    width: 719px;
+    height: 531px;
+    background-image: url("./images/checkImage8.png");
+    background-size: cover;
+    position: absolute;
+    left: 395px;
+    top: 6385px;
+    z-index: -1;
+    /* border: 1px solid green; */
 }
 /* checksImages */
 
@@ -311,7 +329,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: linear-gradient(to bottom, #FFFFFF00, #FFFFFF);
+    background-image: linear-gradient(to bottom, #ffffff49, #fffffff4);
 }
 .module-card1,.module-card2,.module-card3,.module-card4,.module-card5,.module-card6,.module-card7,.module-card8,.module-card9 {
     width: 349px;
@@ -349,21 +367,21 @@
     background-size: cover;
 }
 .module-card7{
-    background-image: url("./images/Module6Image.png");
+    background-image: url("./images/Module7Image.png");
     background-size: cover;
-    filter: blur(1px);
+    /* filter: blur(1px); */
     z-index: -1;
 }
 .module-card8{
-    background-image: url("./images/Module6Image.png");
+    background-image: url("./images/Module8Image.png");
     background-size: cover;
-    filter: blur(1px);
+    /* filter: blur(1px); */
     z-index: -1;
 }
 .module-card9{
-    background-image: url("./images/Module6Image.png");
+    background-image: url("./images/Module9Image.png");
     background-size: cover;
-    filter: blur(1px);
+    /* filter: blur(1px); */
     z-index: -1;
 }
 
@@ -652,6 +670,7 @@
 .mentor-section{
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 .mentor-container{
     width: 1073px;
@@ -670,6 +689,16 @@
     position: absolute;
     right: 0px;
     top: 0px;
+}
+.jayLinkedIn{
+    position: absolute;
+    left: 629px;
+    top: 294px;
+}
+.rashmiLinkedIn{
+    position: absolute;
+    left: 759px;
+    top: 355px;
 }
 .mentor-container h3{
     font-size: 40px;
@@ -743,6 +772,7 @@
 }
 .range-fill-1{
     width: 300px;
+    animation: slideRight 2s ease;
 }
 .range-fill-2{
     width: 400px;
@@ -913,4 +943,182 @@
 }
 .dzgnJamSalary{
     margin-left: 16px;
+}
+/* salary button section ended */
+
+.review-section{
+    margin-top: 91px;
+}
+.review-section>div{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.rightButton, .leftButton{
+    margin-top: 191px;
+}
+.rightButton button, .leftButton button{
+    border: none;
+    background-color: transparent;
+}
+.rightButton{
+    margin-left: 70px;
+}
+.leftButton{
+    margin-right: 70px;
+}
+
+.student-container{
+    width: 719px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.student-container h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 103px 0px 67px 0px;
+}
+.review-para{
+    width: 660px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0%;
+}
+.student-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+}
+.student-pic{
+    width: 107px;
+    height: 107px;
+}
+.student-info h5{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -2%;
+    margin: 27px 0px 20px 0px;
+}
+.designation{
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -2%;
+}
+.student-rating{
+    margin: 20px 0px 16px 0px;
+}
+.student-rating img{
+    width: 10.50px;
+    height: 10.50px;
+}
+.student-rating img:not(:nth-last-child(1)){
+    margin-right: 5.5px;
+}
+/* review-section ended */
+
+.certificate-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 205px;
+}
+.certificate-section>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.certificate-section>div h4{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    margin: 0px 0px 58px 0px;
+}
+.certificate-para{
+    width: 664px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #9E9E9E;
+    text-align: center;
+    margin: 0%;
+}
+.certificate-image{
+    width: 448px;
+    height: 633px;
+    margin-top: 118px;
+}
+
+
+
+
+
+
+/* popupForm */
+.download-curriculum-popUp{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #00000021;
+    backdrop-filter: blur(30px);
+    display: none;
+}
+.download-curriculum-popUp form{
+    background-color: white;
+    padding: 36px;
+    width: 505px;
+    border: 0.5px solid #00000005;
+    box-shadow: 0px 1px 0.75px #0000000D;
+    border-radius: 14px;
+    z-index: 999;
+}
+.download-curriculum-popUp form h3{
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    margin: 0px 0px 55px 0px;
+}
+.download-curriculum-popUp form input{
+    padding: 21px 0px 21px 16px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #B6B7BE;
+}
+.download-curriculum-popUp form input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: #585964;
+}
+.download-curriculum-popUp .popup-body>div:not(:nth-last-child(1)){
+    margin-bottom: 17px;
+}
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.btncross{
+    background-color: transparent;
+    border: none;
+}
+.downloadLightLogo{
+    width: 16px;
+    height: 16px;
+}
+/* Animations */
+@keyframes slideRight {
+    0%{
+        width: 0%;
+        opacity: 1;
+    }
+    100%{
+        width: 300px;
+        opacity: 1;
+    }
 }
