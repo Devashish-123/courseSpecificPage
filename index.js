@@ -57,9 +57,9 @@ async function handleTicketForm(event){
         emailError.innerHTML="";
         numberError.innerHTML="Enter Number";
     } else{
-        const scriptURL = "https://script.google.com/macros/s/AKfycbzZ_IikYjJSxwzzvh8ChoeuStExOwT2Gd4mi7_espv7KKag6W1EMtiObIhyzPQ8LDHE/exec"
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwwJ77bH4MSSgx7E5JVEpc-m6M2OYilxL6t8ayyfOdl50CEE_bqwGP0QhXYEkVER9SpIQ/exec"
         const form = document.forms["google-sheet"];
-
+        alert("Please wait form is in submitting process...")
         await fetch(scriptURL, {method: "POST", body: new FormData(form)})
         .then(response=> alert("Thanks you for contacting us, we will call you shortly..."))
         .catch(error => console.error("Error!", error.message))
@@ -99,16 +99,19 @@ async function handleCurriculumForm(event){
         numberErrorpopup.innerHTML="";
     } 
     else if(useremailpopup.value===""){
+        useremailpopup.focus();
         nameErrorpopup.innerHTML="";
         emailErrorpopup.innerHTML="Enter email address";
         numberErrorpopup.innerHTML="";
     } else if(usernumberpopup.value===""){
+        usernumberpopup.focus();
         nameErrorpopup.innerHTML="";
         emailErrorpopup.innerHTML="";
         numberErrorpopup.innerHTML="Enter Number";
     } else{
-        const scriptURL = "https://script.google.com/macros/s/AKfycbz-lvNj7ErRTbLRa-GMk-hk6lzzgI6afeWIN9gPtupi1FSHdSZVimT5zHSeAMlCR005Xg/exec"
+        const scriptURL = "https://script.google.com/macros/s/AKfycbyV7ESH7CnGwP3g6Er3-VaEe0BSvF72_r17fAEw4HSrxd7Tom3TPYE_EJTql8kTE5gf/exec"
         const form = document.forms["google-sheet-popup"];
+        alert("Please wait form is in submitting process..")
 
         await fetch(scriptURL, {method: "POST", body: new FormData(form)})
         .then(response=> alert("Thanks you for contacting us, we will call you shortly..."))
