@@ -147,7 +147,7 @@
     right: 0px;
     bottom: 110px;
     z-index: -1;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 /* checksImages */
 
@@ -1673,10 +1673,10 @@ footer .right ul a{
         margin-top: 350px;
     }
     .rightButton{
-        margin-left: -20px;
+        margin-left: -40px;
     }
     .leftButton{
-        margin-right: -20px;
+        margin-right: -40px;
     }
     .student-container h3{
         margin: 20px 0px 101px 0px;
