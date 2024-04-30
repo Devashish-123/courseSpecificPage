@@ -1107,6 +1107,9 @@ footer .company-para{
     color: #646677;
    margin: 0%;
 }
+.love-para-mobile{
+    display: none;
+}
 .footer-navigate-row{
     background-image: url("./images/footerNavImage.png");
     background-size: cover;
@@ -1670,10 +1673,10 @@ footer .right ul a{
         margin-top: 350px;
     }
     .rightButton{
-        margin-left: 0px;
+        margin-left: -20px;
     }
     .leftButton{
-        margin-right: 0px;
+        margin-right: -20px;
     }
     .student-container h3{
         margin: 20px 0px 101px 0px;
@@ -1702,6 +1705,46 @@ footer .right ul a{
         margin-top: 79px;
     }
     /* certificate-section ended */
+
+    
+    footer{
+        flex-direction: column;
+        margin-top: 195px;
+        padding: 0px 11px 35px 11px;
+    }
+    footer .company-para{
+        width: 285px;
+        margin: 35px 0px 60px 0px;
+    }
+    .love-para{
+        display: none;
+    }
+    .footer-navigate-row{
+        background-image: url("./images/footerNavImageMobile.png");
+        background-size: cover;
+        width: 353px;
+        height: 83px;
+        border-radius: 9px;
+    }
+    .footer-navigate-row p{
+        width: 100%;
+    }
+    footer .left{
+        margin-left: 19px;
+    }
+    footer .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .love-para-mobile{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #646677;
+        margin: 51px 0px 43px 0px;
+    }
     
 }
 
