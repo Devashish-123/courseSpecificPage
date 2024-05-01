@@ -127,4 +127,453 @@ async function handleCurriculumForm(event){
         document.querySelector("body").style.position="static"
     }
 }
-  
+
+function openBtnOne(){
+    if(document.getElementById("q1").style.height==="auto"){
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("q1").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q1").style.height="auto";
+        document.getElementById("accordion-icon1").innerHTML="-";
+        document.getElementById("accordion-icon1").style.color="#8F8F8F";
+        document.getElementById("q1").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnTwo(){
+    if(document.getElementById("q2").style.height==="auto"){
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("q2").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q2").style.height="auto";
+        document.getElementById("accordion-icon2").innerHTML="-";
+        document.getElementById("accordion-icon2").style.color="#8F8F8F";
+        document.getElementById("q2").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnThree(){
+    if(document.getElementById("q3").style.height==="auto"){
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("q3").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q3").style.height="auto";
+        document.getElementById("accordion-icon3").innerHTML="-";
+        document.getElementById("accordion-icon3").style.color="#8F8F8F";
+        document.getElementById("q3").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnFour(){
+    if(document.getElementById("q4").style.height==="auto"){
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("q4").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q4").style.height="auto";
+        document.getElementById("accordion-icon4").innerHTML="-";
+        document.getElementById("accordion-icon4").style.color="#8F8F8F";
+        document.getElementById("q4").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnFive(){
+    if(document.getElementById("q5").style.height==="auto"){
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("q5").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q5").style.height="auto";
+        document.getElementById("accordion-icon5").innerHTML="-";
+        document.getElementById("accordion-icon5").style.color="#8F8F8F";
+        document.getElementById("q5").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnSix(){
+    if(document.getElementById("q6").style.height==="auto"){
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("q6").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q6").style.height="auto";
+        document.getElementById("accordion-icon6").innerHTML="-";
+        document.getElementById("accordion-icon6").style.color="#8F8F8F";
+        document.getElementById("q6").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnSeven(){
+    if(document.getElementById("q7").style.height==="auto"){
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("q7").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q7").style.height="auto";
+        document.getElementById("accordion-icon7").innerHTML="-";
+        document.getElementById("accordion-icon7").style.color="#8F8F8F";
+        document.getElementById("q7").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnEight(){
+    if(document.getElementById("q8").style.height==="auto"){
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("q8").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q8").style.height="auto";
+        document.getElementById("accordion-icon8").innerHTML="-";
+        document.getElementById("accordion-icon8").style.color="#8F8F8F";
+        document.getElementById("q8").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnNine(){
+    if(document.getElementById("q9").style.height==="auto"){
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("q9").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q9").style.height="auto";
+        document.getElementById("accordion-icon9").innerHTML="-";
+        document.getElementById("accordion-icon9").style.color="#8F8F8F";
+        document.getElementById("q9").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+        document.getElementById("accordion-icon10").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+        document.getElementById("accordion-icon10").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+        document.getElementById("q10").style.height="56px";
+    }
+}
+
+function openBtnTen(){
+    if(document.getElementById("q10").style.height==="auto"){
+        document.getElementById("q10").style.height="56px";
+        document.getElementById("accordion-icon10").innerHTML="+";
+        document.getElementById("accordion-icon10").style.color="black";
+        document.getElementById("q10").style.transition = "height 0.5s";
+
+    } else{
+        document.getElementById("q10").style.height="auto";
+        document.getElementById("accordion-icon10").innerHTML="-";
+        document.getElementById("accordion-icon10").style.color="#8F8F8F";
+        document.getElementById("q10").style.transition ="height 0.5s";
+
+        document.getElementById("accordion-icon1").innerHTML="+";
+        document.getElementById("accordion-icon2").innerHTML="+";
+        document.getElementById("accordion-icon4").innerHTML="+";
+        document.getElementById("accordion-icon5").innerHTML="+";
+        document.getElementById("accordion-icon6").innerHTML="+";
+        document.getElementById("accordion-icon7").innerHTML="+";
+        document.getElementById("accordion-icon8").innerHTML="+";
+        document.getElementById("accordion-icon9").innerHTML="+";
+        document.getElementById("accordion-icon3").innerHTML="+";
+
+        document.getElementById("accordion-icon1").style.color="black";
+        document.getElementById("accordion-icon2").style.color="black";
+        document.getElementById("accordion-icon4").style.color="black";
+        document.getElementById("accordion-icon5").style.color="black";
+        document.getElementById("accordion-icon6").style.color="black";
+        document.getElementById("accordion-icon7").style.color="black";
+        document.getElementById("accordion-icon8").style.color="black";
+        document.getElementById("accordion-icon9").style.color="black";
+        document.getElementById("accordion-icon3").style.color="black";
+
+        document.getElementById("q1").style.height="56px";
+        document.getElementById("q2").style.height="56px";
+        document.getElementById("q4").style.height="56px";
+        document.getElementById("q5").style.height="56px";
+        document.getElementById("q6").style.height="56px";
+        document.getElementById("q7").style.height="56px";
+        document.getElementById("q8").style.height="56px";
+        document.getElementById("q9").style.height="56px";
+        document.getElementById("q3").style.height="56px";
+    }
+}

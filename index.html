@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DzgnJam Course Specific Page</title>
+
+    <!-- <meta name="keywords" content="UI/UX design institute, User interface design, User experience design, UI/UX courses, Graphic design institute, Web design classes,Interactive design,Visual design course,UI development,Creative design school"> -->
+    
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="../index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,7 +114,7 @@
 
         <div class="right-section">
             <form onsubmit="handleTicketForm(event)" autocomplete="off" name="google-sheet">
-                <h2>Book course overview session <span class="tiltTextBeginners">< It,s free</span></h2>
+                <h2>Book course overview session</h2>
 
                 <input id="txtName" type="text" name="userName" placeholder="Your Name"><br>
                 <span id="nameError"></span>
@@ -295,10 +298,6 @@
     <div class="curriculum-section">
         <div>
             <div>
-                <span class="tiltTextPink">To view more modules <img src="./images/redArrow.svg" alt=""></span>
-            </div>
-    
-            <div>
                 <button onclick="popupOpen()" class="btn-curriculum">Download Curriculum <img src="./images/downloadIcon.svg"></button>
             </div>
         </div>
@@ -341,7 +340,6 @@
 
     <div class="upcoming-batch-section">
         <div class="batch-toggle" style="position: relative;">
-            <span class="tiltTextBeginners" style="position: absolute;">< Best for beginners</span>
             <div>
                 <button id="igniteButton" onclick="btnIgniteClick()" class="btnIgnit">Ignite<img id="igniteLogo" src="./images/ignitLogo.svg" alt=""></button>
                 <button id="intesiveButton" onclick="btnIntensiveClick()" class="btnIntesive">Intensive <img id="intesiveLogo" src="./images/intesivLogo.svg" alt=""></button>
@@ -468,7 +466,7 @@
             </div>
 
             <div class="row-4">
-                <div style="text-align: center;" class="tiltTextBeginners">
+                <div style="text-align: center;" class="cohotTiltText">
                     <img src="./images/upArrow.svg" alt=""><br>
                     <span>They are the best</span>
                 </div>
@@ -614,6 +612,113 @@
         </div>
     </div>
     <!-- certificate section ended -->
+
+    <div class="faq-section">
+        <div class="accordion">
+            <div style="display:flex; justify-content:center">
+                <h4>Frequently Asked Questions</h4>
+            </div>
+            <button onclick="openBtnOne()" id="q1">
+                <span id="accordion-icon1">+</span>
+                <div>
+                    <h5>Does coding is necessary for learn UX UI Design?</h5>
+                </div>
+                <div>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable </p>
+                </div>
+            </button>
+
+            <button onclick="openBtnTwo()" id="q2">
+                <span id="accordion-icon2">+</span>
+                <div>
+                    <h5>Are there any prerequisites for this program?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnThree()" id="q3">
+                <span id="accordion-icon3">+</span>
+                <div>
+                    <h5>Is this a Job Guarantee Program?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnFour()" id="q4">
+                <span id="accordion-icon4">+</span>
+                <div>
+                    <h5>What if I remain absent?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnFive()" id="q5">
+                <span id="accordion-icon5">+</span>
+                <div>
+                    <h5>What is included in this program?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnSix()" id="q6">
+                <span id="accordion-icon6">+</span>
+                <div>
+                    <h5>Which role will I get after completing this program?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnSeven()" id="q7">
+                <span id="accordion-icon7">+</span>
+                <div>
+                    <h5>Do I need to learn coding?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnEight()" id="q8">
+                <span id="accordion-icon8">+</span>
+                <div>
+                    <h5>I am a dropout so will any company hire me?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnNine()" id="q9">
+                <span id="accordion-icon9">+</span>
+                <div>
+                    <h5>Which program is more suitable for me? Ignite vs Intensive?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+
+            <button onclick="openBtnTen()" id="q10">
+                <span id="accordion-icon10">+</span>
+                <div>
+                    <h5>Who are your placement partner?</h5>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio quisquam ipsum nostrum dolorem tempore adipisci, nemo quibusdam est explicabo sint optio. Dicta aut non consequuntur odio enim maiores perspiciatis.</p>
+                </div>
+            </button>
+        </div>
+    </div>
 
 
     <footer>

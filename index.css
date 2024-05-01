@@ -10,26 +10,15 @@
   button{
     cursor: pointer;
   }
-  /* TiltTextTyle */
-  .tiltTextPink, .tiltTextBeginners{
+
+  .cohotTiltText{
     font-size: 32px;
     font-weight: 400;
     font-family: "Caveat", cursive;
-    transform: rotate(-10deg);
-}
-.tiltTextPink{
-    color: #ED3A4F;
-    margin-left: 30px;
-}
-.tiltTextPink img{
-    margin-bottom: -20px;
-    margin-left: 10px;
-}
-.tiltTextBeginners{
     color: #9747FF;
-    top: 64%; 
-    left: 59.50%;
-}
+    transform: rotate(-10deg);
+  }
+  /* TiltTextTyle */
 
   header{
     display: flex;
@@ -1087,6 +1076,58 @@
 /* certificate-section ended */
 
 
+.faq-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 285px;
+}
+.faq-section .accordion{
+    width: 880px;
+}
+.accordion h4{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0px 0px 79px 0px;
+    width: 335px;
+    text-align: center;
+    letter-spacing: -3%;
+}
+.accordion button{
+    width: 100%;
+    padding: 0%;
+    height: 56px;
+    background-color: white;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 15px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: height 2s;
+    margin-bottom: 20px;
+}
+.accordion button h5{
+    margin: 0%;
+    font-size: 17px;
+    font-weight: 500;
+}
+.accordion button p{
+    margin: 26px 0px 0px 0px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #8F8F8F;
+    text-align: justify;
+}
+#accordion-icon1, #accordion-icon2, #accordion-icon3, #accordion-icon4, #accordion-icon5, #accordion-icon6, #accordion-icon7, #accordion-icon8, #accordion-icon9, #accordion-icon10{
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+/* faq-section ended */
 
 footer{
     display: flex;
@@ -1218,6 +1259,14 @@ footer .right ul a{
 
 /* Responsive For Mobile */
 @media screen and (max-width:599px) {
+    .cohotTiltText{
+        font-size: 22px;
+        font-weight: 400;
+        font-family: "Caveat", cursive;
+        color: #9747FF;
+        transform: rotate(-10deg);
+    }
+      /* tiltTextStyle */
     .checks-image1{
         width: 420px;
         height: 531px;
@@ -1392,7 +1441,7 @@ footer .right ul a{
     }
     .hero-section .right-section form h2{
         margin: 0px 0px 45px 0px;
-        width: 170px;
+        width: 200px;
     }
     .hero-section .right-section form input:not(:nth-child(2)){
         margin-top: 16px;
@@ -1706,6 +1755,37 @@ footer .right ul a{
     }
     /* certificate-section ended */
 
+
+    .faq-section .accordion{
+        width: 346px;
+    }
+    .accordion h4{
+        font-size: 30px;
+    }
+    .accordion button{
+        height: 79px;
+        padding: 0px
+    }
+    .accordion button h5{
+        margin: 15px 0px 0px 15px;
+        font-size: 13px;
+        font-weight: 500;
+        width: 222px;
+        text-align: justify;
+    }
+    .accordion button p{
+        margin: 26px 0px 0px 0px;
+        font-size: 12px;
+        margin: 26px 15px 15px 15px;
+    }
+    #accordion-icon1, #accordion-icon2, #accordion-icon3, #accordion-icon4, #accordion-icon5, #accordion-icon6, #accordion-icon7, #accordion-icon8, #accordion-icon9, #accordion-icon10{
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+    /* faq-section ended */
     
     footer{
         flex-direction: column;
