@@ -34,7 +34,7 @@
     <div class="checks-image7"></div> 
     <div class="checks-image8"></div>
     <div class="checks-image9"></div> 
-    <div class="checks-image10"></div> 
+    <div class="checks-image10"></div>
 
     <!-- Download Popup -->
     <div id="curriculum-form" class="download-curriculum-popUp">
@@ -67,6 +67,28 @@
         </form>
     </div>
     <!-- DownloadPopup ended -->
+
+    <!-- LeavingPopup -->
+    <div id="leavingPopup" class="leaving-popUp">
+        <form class="leaving-form" onsubmit="handleLeavingForm(event)">
+            <h3>Leaving? Join our course 
+                kickoff session for more 
+                details, <span class="leavingTiltText">It is Free!</span></h3>
+
+            <p>Kickstart your career as a product designer (UI/UX) and grab an opportunity at top tech companies.</p>
+
+            <input type="text" name="userName" placeholder="Your Name">
+
+            <input type="email" name="userEmail" placeholder="Enter Email Address">
+
+            <input type="text" name="userNumber" placeholder="Number">
+
+            <button class="btnLeavingGetTicket">
+                Get a Ticket <img src="./images/btnTicketVector.svg" alt="">
+            </button>
+        </form>
+    </div>
+    <!-- LeavingPopUp ended -->
 
 
     <header>
@@ -116,7 +138,7 @@
 
         <div class="right-section">
             <form onsubmit="handleTicketForm(event)" autocomplete="off" name="google-sheet">
-                <h2>Book course overview session</h2>
+                <h2>Book course overview session <div class="getTicketFormTiltText" style="margin-top: 20px;">< It’s free</div></h2>
 
                 <input id="txtName" type="text" name="userName" placeholder="Your Name"><br>
                 <span id="nameError"></span>
@@ -297,12 +319,14 @@
     </div>
     <!-- Module Section Ended -->
 
-    <div class="curriculum-section">
+    <div style="position: relative;" class="curriculum-section">
         <div>
             <div>
                 <button onclick="popupOpen()" class="btn-curriculum">Download Curriculum <img src="./images/downloadIcon.svg"></button>
             </div>
         </div>
+        <div class="curriculumTiltText">To view more modules</div>
+        <img class="redArrow" src="./images/arroRed.svg" alt="">
     </div>
     <!-- curriculum sectin Ended -->
 
@@ -342,9 +366,13 @@
 
     <div class="upcoming-batch-section">
         <div class="batch-toggle" style="position: relative;">
-            <div>
+            <div style="position: relative;">
                 <button id="igniteButton" onclick="btnIgniteClick()" class="btnIgnit">Ignite<img id="igniteLogo" src="./images/ignitLogo.svg" alt=""></button>
                 <button id="intesiveButton" onclick="btnIntensiveClick()" class="btnIntesive">Intensive <img id="intesiveLogo" src="./images/intesivLogo.svg" alt=""></button>
+
+                <span class="toggleTiltText">< Best for beginners</span>
+                <span class="toggleTiltText1">Best for beginners <img class="arrowBlue" src="./images/arroBlue.svg" alt=""></span>
+
             </div>
         </div>
 
@@ -355,8 +383,8 @@
                         <h3>April Batch</h3>
                         <p>APRIL 1ST</p>
                     </div>
-                    <div class="card-flag">
-                        <img src="./images/ignitOrangeLogo.svg" alt=""><span id="batchType1">Ignite</span>
+                    <div class="card-flag" id="cardFlag1">
+                        <img id="batchIcon" src="./images/ignitOrangeLogo.svg" alt=""><span id="batchType1">Ignite</span>
                     </div>
                 </div>
 
@@ -385,8 +413,8 @@
                         <h3>April Batch</h3>
                         <p>APRIL 1ST</p>
                     </div>
-                    <div class="card-flag">
-                        <img src="./images/ignitOrangeLogo.svg" alt=""><span id="batchType2">ignite</span>
+                    <div class="card-flag" id="cardFlag2">
+                        <img id="batchIcon2" src="./images/ignitOrangeLogo.svg" alt=""><span id="batchType2">ignite</span>
                     </div>
                 </div>
 
@@ -421,7 +449,7 @@
                 <a target="_blank" href="https://www.linkedin.com/in/rashmi-bahekar-8389a7207/"> <img class="rashmiLinkedInMobile" src="./images/rashmiLinkedInMobile.svg" alt=""></a>
             </div>
 
-            <h3>Meet our Industry <img src="">Mentors</h3>
+            <h3>Meet our Industry <span style="position: relative;color: #CFCFCF;">Expert <img class="expertDel" src="./images/del.svg"><sup class="mentorTiltText">Magicians</sup></span>Mentors</h3>
             <p>Kickstart your career as a product designer (UI/UX) and grab an opportunity at top tech companies.</p>
             <p>Click their name to see the profile <img src="./images/arrow_right.svg" alt=""></p>
         </div> 

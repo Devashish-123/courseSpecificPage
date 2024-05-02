@@ -6,6 +6,12 @@ function btnIgniteClick(){
     document.getElementById("igniteLogo").src="./images/ignitLogo.svg"
     document.getElementById("batchType1").innerHTML="Ignite"
     document.getElementById("batchType2").innerHTML="Ignite"
+    document.getElementById("batchType1").style.color="#FF6E00"
+    document.getElementById("batchType2").style.color="#FF6E00"
+    document.getElementById("batchIcon").src="./images/ignitOrangeLogo.svg"
+    document.getElementById("batchIcon2").src="./images/ignitOrangeLogo.svg"
+    document.getElementById("cardFlag1").style.border="1px solid #FFE9D9"
+    document.getElementById("cardFlag2").style.border="1px solid #FFE9D9"
     
 
 
@@ -14,16 +20,25 @@ function btnIgniteClick(){
     document.getElementById("intesiveButton").style.border="0.5px solid #00000033";
     document.getElementById("intesiveButton").style.fontWeight="500";
     document.getElementById("intesiveLogo").src="./images/intesivLogo.svg";
+
+    document.getElementById("intesiveButton").style.boxShadow="0px 0px 0px white"
 }
 
 function btnIntensiveClick(){
     document.getElementById("intesiveButton").style.backgroundImage="linear-gradient(to bottom, #0D99FF, #52B6FF, #B5E0FF)";
     document.getElementById("intesiveButton").style.color="#FFFFFF"
     document.getElementById("intesiveButton").style.border="1.3px solid #B5E0FF";
+    document.getElementById("intesiveButton").style.boxShadow="0px 0px 10px #92D2FF"
     document.getElementById("intesiveButton").style.fontWeight="600";
     document.getElementById("intesiveLogo").src="./images/intesivDarkLogo.svg";
     document.getElementById("batchType1").innerHTML="Intensive"
     document.getElementById("batchType2").innerHTML="Intensive"
+    document.getElementById("batchType1").style.color="#1EA0FF"
+    document.getElementById("batchType2").style.color="#1EA0FF"
+    document.getElementById("batchIcon").src="./images/blueIntensive.svg"
+    document.getElementById("batchIcon2").src="./images/blueIntensive.svg"
+    document.getElementById("cardFlag1").style.border="1px solid #1EA0FF30"
+    document.getElementById("cardFlag2").style.border="1px solid #1EA0FF30"
  
 
     document.getElementById("igniteButton").style.backgroundImage="linear-gradient(#FFFFFF, #FFFFFF)"
@@ -49,10 +64,12 @@ async function handleTicketForm(event){
         numberError.innerHTML="";
     } 
     else if(useremail.value===""){
+        useremail.focus();
         nameError.innerHTML="";
         emailError.innerHTML="Enter email address";
         numberError.innerHTML="";
     } else if(usernumber.value===""){
+        usernumber.focus();
         nameError.innerHTML="";
         emailError.innerHTML="";
         numberError.innerHTML="Enter Number";
@@ -76,7 +93,14 @@ async function handleTicketForm(event){
 
 function popupClose(){
     document.getElementById("curriculum-form").style.display="none"
-    document.querySelector("body").style.position="static"
+    document.querySelector("body").style.position="static";
+    document.getElementById("txtNamePopUp").value="";
+    document.getElementById("txtEmailPopUp").value="";
+    document.getElementById("txtNumberPopUp").value="";
+    document.getElementById("nameErrorPopUp").innerHTML="";
+    document.getElementById("numberErrorPopUp").innerHTML=""
+    document.getElementById("emailErrorPopUp").innerHTML="";
+
 }
 function popupOpen(){
     document.getElementById("curriculum-form").style.display="flex"
@@ -125,455 +149,22 @@ async function handleCurriculumForm(event){
 
         document.getElementById("curriculum-form").style.display="none";
         document.querySelector("body").style.position="static"
+
+        usernamepopup.value="";
+        useremailpopup.value="";
+        usernumberpopup.value="";
+        nameErrorpopup.innerHTML=""
+        emailErrorpopup.innerHTML=""
+        numberErrorpopup.innerHTML=""
     }
 }
 
-function openBtnOne(){
-    if(document.getElementById("q1").style.height==="auto"){
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("q1").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q1").style.height="auto";
-        document.getElementById("accordion-icon1").innerHTML="-";
-        document.getElementById("accordion-icon1").style.color="#8F8F8F";
-        document.getElementById("q1").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
+function handleLeavingForm(event){
+    event.preventDefault();
+    alert("hi")
 }
 
-function openBtnTwo(){
-    if(document.getElementById("q2").style.height==="auto"){
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("q2").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q2").style.height="auto";
-        document.getElementById("accordion-icon2").innerHTML="-";
-        document.getElementById("accordion-icon2").style.color="#8F8F8F";
-        document.getElementById("q2").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnThree(){
-    if(document.getElementById("q3").style.height==="auto"){
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("q3").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q3").style.height="auto";
-        document.getElementById("accordion-icon3").innerHTML="-";
-        document.getElementById("accordion-icon3").style.color="#8F8F8F";
-        document.getElementById("q3").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnFour(){
-    if(document.getElementById("q4").style.height==="auto"){
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("q4").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q4").style.height="auto";
-        document.getElementById("accordion-icon4").innerHTML="-";
-        document.getElementById("accordion-icon4").style.color="#8F8F8F";
-        document.getElementById("q4").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnFive(){
-    if(document.getElementById("q5").style.height==="auto"){
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("q5").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q5").style.height="auto";
-        document.getElementById("accordion-icon5").innerHTML="-";
-        document.getElementById("accordion-icon5").style.color="#8F8F8F";
-        document.getElementById("q5").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnSix(){
-    if(document.getElementById("q6").style.height==="auto"){
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("q6").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q6").style.height="auto";
-        document.getElementById("accordion-icon6").innerHTML="-";
-        document.getElementById("accordion-icon6").style.color="#8F8F8F";
-        document.getElementById("q6").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnSeven(){
-    if(document.getElementById("q7").style.height==="auto"){
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("q7").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q7").style.height="auto";
-        document.getElementById("accordion-icon7").innerHTML="-";
-        document.getElementById("accordion-icon7").style.color="#8F8F8F";
-        document.getElementById("q7").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnEight(){
-    if(document.getElementById("q8").style.height==="auto"){
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("q8").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q8").style.height="auto";
-        document.getElementById("accordion-icon8").innerHTML="-";
-        document.getElementById("accordion-icon8").style.color="#8F8F8F";
-        document.getElementById("q8").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnNine(){
-    if(document.getElementById("q9").style.height==="auto"){
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("q9").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q9").style.height="auto";
-        document.getElementById("accordion-icon9").innerHTML="-";
-        document.getElementById("accordion-icon9").style.color="#8F8F8F";
-        document.getElementById("q9").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-        document.getElementById("accordion-icon10").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-        document.getElementById("accordion-icon10").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-        document.getElementById("q10").style.height="56px";
-    }
-}
-
-function openBtnTen(){
-    if(document.getElementById("q10").style.height==="auto"){
-        document.getElementById("q10").style.height="56px";
-        document.getElementById("accordion-icon10").innerHTML="+";
-        document.getElementById("accordion-icon10").style.color="black";
-        document.getElementById("q10").style.transition = "height 0.5s";
-
-    } else{
-        document.getElementById("q10").style.height="auto";
-        document.getElementById("accordion-icon10").innerHTML="-";
-        document.getElementById("accordion-icon10").style.color="#8F8F8F";
-        document.getElementById("q10").style.transition ="height 0.5s";
-
-        document.getElementById("accordion-icon1").innerHTML="+";
-        document.getElementById("accordion-icon2").innerHTML="+";
-        document.getElementById("accordion-icon4").innerHTML="+";
-        document.getElementById("accordion-icon5").innerHTML="+";
-        document.getElementById("accordion-icon6").innerHTML="+";
-        document.getElementById("accordion-icon7").innerHTML="+";
-        document.getElementById("accordion-icon8").innerHTML="+";
-        document.getElementById("accordion-icon9").innerHTML="+";
-        document.getElementById("accordion-icon3").innerHTML="+";
-
-        document.getElementById("accordion-icon1").style.color="black";
-        document.getElementById("accordion-icon2").style.color="black";
-        document.getElementById("accordion-icon4").style.color="black";
-        document.getElementById("accordion-icon5").style.color="black";
-        document.getElementById("accordion-icon6").style.color="black";
-        document.getElementById("accordion-icon7").style.color="black";
-        document.getElementById("accordion-icon8").style.color="black";
-        document.getElementById("accordion-icon9").style.color="black";
-        document.getElementById("accordion-icon3").style.color="black";
-
-        document.getElementById("q1").style.height="56px";
-        document.getElementById("q2").style.height="56px";
-        document.getElementById("q4").style.height="56px";
-        document.getElementById("q5").style.height="56px";
-        document.getElementById("q6").style.height="56px";
-        document.getElementById("q7").style.height="56px";
-        document.getElementById("q8").style.height="56px";
-        document.getElementById("q9").style.height="56px";
-        document.getElementById("q3").style.height="56px";
-    }
+window.onbeforeunload = function() {
+   document.getElementById("leavingPopup").style.display="flex"
+   document.querySelector("body").style.position="fixed"
 }
