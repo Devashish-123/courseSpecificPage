@@ -11,6 +11,13 @@
     cursor: pointer;
   }
 
+  .popUpTiltText{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Caveat", cursive;
+    color: #9747FF;
+    transform: rotate(-10deg);
+  }
   .cohotTiltText{
     font-size: 32px;
     font-weight: 400;
@@ -584,17 +591,17 @@
     padding: 35px 25px 30px 25px;
     background-color: white;
 }
-.batch-cards .card-1 .card-header, .card-2 .card-header{
+.batch-cards .card-1 .card-head, .card-2 .card-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.batch-cards .card-1 .card-header h3, .card-2 .card-header h3{
+.batch-cards .card-1 .card-head h3, .card-2 .card-head h3{
     font-size: 30px;
     font-weight: 600;
     margin: 0px 0px 20px 0px;
 }
-.batch-cards .card-1 .card-header p, .card-2 .card-header p{
+.batch-cards .card-1 .card-head p, .card-2 .card-head p{
     margin: 0%;
     font-size: 16px;
     font-weight: 500;
@@ -615,7 +622,7 @@
 .batch-cards .card-flag img{
     margin-right: 7px;
 }
-.batch-cards .card-1 .card-body, .batch-cards .card-2 .card-body{
+.batch-cards .card-1 .card-bod, .batch-cards .card-2 .card-bod{
     margin-top: 34px;
 }
 .batch-cards .card-1 .row-1, .row-2, .row-3, .batch-cards .card-2 .row-1, .row-2, .row-3{
@@ -1075,57 +1082,52 @@
 }
 /* certificate-section ended */
 
-
-.faq-section{
+  .accordion-item::after{
+    background-image: url("./images/add.svg");
+    background-size: cover;
+    transform: scale(0.4) !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("./images/minus.svg");
+    background-size: cover;
+  }
+  .faq-section{
     display: flex;
     justify-content: center;
     margin-top: 285px;
-}
-.faq-section .accordion{
-    width: 880px;
-}
-.accordion h4{
-    font-size: 40px;
-    font-weight: 500;
-    margin: 0px 0px 79px 0px;
-    width: 335px;
-    text-align: center;
-    letter-spacing: -3%;
-}
-.accordion button{
-    width: 100%;
-    padding: 0%;
-    height: 56px;
-    background-color: white;
+  }
+  .accordion-item{
+    margin-bottom: 14px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 25px 15px 20px;
-    position: relative;
-    overflow: hidden;
-    transition: height 2s;
-    margin-bottom: 20px;
-}
-.accordion button h5{
-    margin: 0%;
+  }
+  .question{
     font-size: 17px;
     font-weight: 500;
-}
-.accordion button p{
-    margin: 26px 0px 0px 0px;
+  }
+  .accordion-button{
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+  }
+  .accordion{
+    width: 880px;
+    border-radius: 10px;
+  }
+  .accordion-body{
     font-size: 17px;
     font-weight: 500;
     color: #8F8F8F;
-    text-align: justify;
-}
-#accordion-icon1, #accordion-icon2, #accordion-icon3, #accordion-icon4, #accordion-icon5, #accordion-icon6, #accordion-icon7, #accordion-icon8, #accordion-icon9, #accordion-icon10{
-    font-size: 25px;
+    border-radius: 10px;
+  }
+  .accordion h6{
+    text-align: center;
+    font-size: 40px;
     font-weight: 500;
-    position: absolute;
-    right: 25px;
-    top: 10px;
-}
+    margin: 0px 0px 79px 0px;
+  }
+
+
 
 /* faq-section ended */
 
@@ -1199,6 +1201,7 @@ footer .right ul a{
     font-size: 16px;
     font-weight: 400;
 }
+/* footer ended */
 
 
 /* popupForm */
@@ -1229,7 +1232,7 @@ footer .right ul a{
     margin: 0px 0px 55px 0px;
 }
 .download-curriculum-popUp form input{
-    padding: 21px 0px 21px 16px;
+    padding: 21px 21px 21px 16px;
     width: 100%;
     border-radius: 12px;
     border: 1px solid #B6B7BE;
@@ -1255,6 +1258,25 @@ footer .right ul a{
     width: 16px;
     height: 16px;
 }
+.btnGetTicketPopUp{
+    margin-top: 20px;
+    width: 156px;
+    padding: 20px 25px 20px 25px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-image: linear-gradient(#000000,#666666);
+    border-radius: 150px;
+    border: 1px solid #666666;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btnGetTicketPopUp img{
+    width: 19.25px;
+    height: 13.75px;
+    margin-left: 10.38px; 
+}
 
 
 /* Responsive For Mobile */
@@ -1266,29 +1288,30 @@ footer .right ul a{
         color: #9747FF;
         transform: rotate(-10deg);
     }
+    .popUpTiltText{
+        font-size: 22px;
+      }
       /* tiltTextStyle */
     .checks-image1{
-        width: 420px;
-        height: 531px;
+        width: 226px;
+        height: 349px;
         background-image: url("./images/checkImage1.png");
         background-size: cover;
         position: absolute;
         left: 0px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* border: 1px solid green; */
     }
     .checks-image2{
-        width: 397px;
-        height: 531px;
+        width: 195px;
+        height: 349px;
         background-image: url("./images/checkImage2.png");
         background-size: cover;
         position: absolute;
         right: 0px;
-        top: 318px;
+        top: 448px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* border: 1px solid green; */
     }
     .checks-image3{
         width: 719px;
@@ -1299,56 +1322,54 @@ footer .right ul a{
         left: 127px;
         top: 706px;
         z-index: -1;
-        border: 1px solid green;
+        /* border: 1px solid green; */
         display: none;
     }
     .checks-image4{
-        width: 638px;
-        height: 532px;
+        width: 263px;
+        height: 294px;
         background-image: url("./images/checkImage4.png");
         background-size: cover;
         position: absolute;
         right: 0px;
-        top: 1077px;
+        top: 1269px;
         z-index: -1;
-        border: 1px solid green;
+        /* border: 1px solid green; */
         display: none;
     }
     .checks-image5{
-        width: 627px;
-        height: 532px;
+        width: 100%;
+        height: 378px;
         background-image: url("./images/checkImage5.png");
         background-size: cover;
         position: absolute;
-        right: 0px;
-        top: 3249px;
+        left: 0px;
+        top: 4249px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* border: 1px solid green; */
+        /* display: none; */
     }
     .checks-image6{
-        width: 539px;
-        height: 532px;
+        width: 263px;
+        height: 294px;
         background-image: url("./images/checkImage6.png");
         background-size: cover;
         position: absolute;
         left: 0px;
-        top: 4637px;
+        top: 1350px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* border: 1px solid green; */
     }
     .checks-image7{
-        width: 590px;
-        height: 532px;
+        width: 280px;
+        height: 368px;
         background-image: url("./images/checkImage7.png");
         background-size: cover;
         position: absolute;
-        right: 0px;
-        top: 5220px;
+        left: 0px;
+        top: 5420px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* border: 1px solid green; */
     }
     .checks-image8{
         width: 719px;
@@ -1359,32 +1380,31 @@ footer .right ul a{
         left: 395px;
         top: 6385px;
         z-index: -1;
-        border: 1px solid green;
+        /* border: 1px solid green; */
         display: none;
     }
     .checks-image9{
-        width: 719px;
-        height: 531px;
+        width: 100%;
+        height: 464px;
         background-image: url("./images/checkImage9.png");
         background-size: cover;
         position: absolute;
-        left: 550px;
-        top: 7730px;
+        left:0px;
+        top: 7330px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* border: 1px solid green; */
+        /* display: none; */
     }
     .checks-image10{
-        width: 575px;
+        width: 100%;
         height: 532px;
         background-image: url("./images/checkImage10.png");
         background-size: cover;
         position: absolute;
         right: 0px;
-        bottom: 110px;
+        bottom: 414px;
         z-index: -1;
-        border: 1px solid green;
-        display: none;
+        /* display: none; */
     }
 
     .hero-section{
@@ -1755,36 +1775,14 @@ footer .right ul a{
     }
     /* certificate-section ended */
 
-
-    .faq-section .accordion{
+    .accordion{
         width: 346px;
-    }
-    .accordion h4{
+      }
+      .accordion h6{
         font-size: 30px;
-    }
-    .accordion button{
-        height: 79px;
-        padding: 0px
-    }
-    .accordion button h5{
-        margin: 15px 0px 0px 15px;
-        font-size: 13px;
-        font-weight: 500;
-        width: 222px;
-        text-align: justify;
-    }
-    .accordion button p{
-        margin: 26px 0px 0px 0px;
-        font-size: 12px;
-        margin: 26px 15px 15px 15px;
-    }
-    #accordion-icon1, #accordion-icon2, #accordion-icon3, #accordion-icon4, #accordion-icon5, #accordion-icon6, #accordion-icon7, #accordion-icon8, #accordion-icon9, #accordion-icon10{
-        font-size: 20px;
-        font-weight: 500;
-        position: absolute;
-        right: 25px;
-        top: 15px;
-    }
+        margin: 0px 0px 70px 0px;
+      }
+    
     /* faq-section ended */
     
     footer{
@@ -1824,8 +1822,49 @@ footer .right ul a{
         font-weight: 400;
         color: #646677;
         margin: 51px 0px 43px 0px;
+    } 
+    footer .right ul{
+        flex-wrap: wrap;
     }
-    
+    footer .right ul li:not(:nth-last-child(1)){
+        margin-right: 20%;
+        margin-bottom: 20px;
+    }
+    /* footer ended */
+
+    .download-curriculum-popUp form{
+        width: 335px;
+        height: 534px;
+        padding:20px 20px 20px 20px;  
+    }
+    .download-curriculum-popUp form h3{
+        margin: 0px 0px 30px 0px;
+    }
+    .download-curriculum-popUp form input{
+        padding: 15px 15px 15px 15px;
+    }
+    .download-curriculum-popUp .popup-body>div:not(:nth-last-child(1)){
+        margin-bottom: 0px;
+    }
+    .btnGetTicketPopUp{
+        margin-top: 20px;
+        width: 156px;
+        padding: 15px 25px 15px 25px;
+        font-size: 15px;
+        color: #FFFFFF;
+        font-weight: 600;
+        background-image: linear-gradient(#000000,#666666);
+        border-radius: 150px;
+        border: 1px solid #666666;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .btnGetTicketPopUp img{
+        width: 19.25px;
+        height: 13.75px;
+        margin-left: 10.38px; 
+    }
 }
 
 
