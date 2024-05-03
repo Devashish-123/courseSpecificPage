@@ -3,6 +3,7 @@ function btnIgniteClick(){
     document.getElementById("igniteButton").style.color="#FFFFFF"
     document.getElementById("igniteButton").style.border=" 0.5px solid #00000033";
     document.getElementById("igniteButton").style.fontWeight="600";
+    document.getElementById("igniteButton").style.boxShadow="0px 4px 6.70px rgba(0, 0, 0, 0.25)"
     document.getElementById("igniteLogo").src="./images/ignitLogo.svg"
     document.getElementById("batchType1").innerHTML="Ignite"
     document.getElementById("batchType2").innerHTML="Ignite"
@@ -25,12 +26,13 @@ function btnIgniteClick(){
 }
 
 function btnIntensiveClick(){
-    document.getElementById("intesiveButton").style.backgroundImage="linear-gradient(to bottom, #0D99FF, #52B6FF, #B5E0FF)";
+    document.getElementById("intesiveButton").style.backgroundImage="linear-gradient(to bottom, rgba(13, 153, 255, 1), rgba(82, 182, 255, 1), rgba(181, 224, 255, 1))";
     document.getElementById("intesiveButton").style.color="#FFFFFF"
     document.getElementById("intesiveButton").style.border="1.3px solid #B5E0FF";
-    document.getElementById("intesiveButton").style.boxShadow="0px 0px 10px #92D2FF"
+    document.getElementById("intesiveButton").style.boxShadow="0px 4px 10px #92D2FF"
     document.getElementById("intesiveButton").style.fontWeight="600";
     document.getElementById("intesiveLogo").src="./images/intesivDarkLogo.svg";
+    document.getElementById("intesiveLogo").style.filter = "drop-shadow(0px 0px 10px white)";
     document.getElementById("batchType1").innerHTML="Intensive"
     document.getElementById("batchType2").innerHTML="Intensive"
     document.getElementById("batchType1").style.color="#1EA0FF"
@@ -46,6 +48,8 @@ function btnIntensiveClick(){
     document.getElementById("igniteButton").style.border="0.5px solid #00000033";
     document.getElementById("igniteButton").style.fontWeight="500";
     document.getElementById("igniteLogo").src="./images/ignitDarkLogo.svg"
+    document.getElementById("igniteButton").style.boxShadow="0px 0px 0px white"
+
 }
 
 async function handleTicketForm(event){
@@ -161,5 +165,5 @@ async function handleCurriculumForm(event){
 
 function handleLeavingForm(event){
     event.preventDefault();
-    alert("hi")
+    alert("hi");
 }
