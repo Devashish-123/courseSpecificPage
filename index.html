@@ -51,7 +51,7 @@
                 </div>
 
                 <div>
-                    <input name="emailPopup" placeholder="Enter Email Address" type="text" id="txtEmailPopUp">
+                    <input name="emailPopup" placeholder="Enter Email Address" type="email" id="txtEmailPopUp">
                     <label id="emailErrorPopUp"></label>
                 </div>
 
@@ -137,20 +137,22 @@
         </div>
 
         <div class="right-section">
-            <form onsubmit="handleTicketForm(event)" autocomplete="off" name="google-sheet">
-                <h2>Book course overview session <div class="getTicketFormTiltText" style="margin-top: 20px;">< It’s free</div></h2>
-
-                <input id="txtName" type="text" name="userName" placeholder="Your Name"><br>
-                <span id="nameError"></span>
-
-                <input id="txtEmail" type="email" name="userEmail" placeholder="Enter Email Address"><br>
-                <span id="emailError"></span>
-
-                <input id="txtNumber" type="text" name="userNumber" placeholder="Number"><br>
-                <span id="numberError"></span>
-
-                <button class="btnGetTicket">Get a Ticket <img src="./images/btnTicketVector.svg"></button>
-            </form>
+            <div class="color-bottom-shadow">
+                <form onsubmit="handleTicketForm(event)" autocomplete="off" name="google-sheet">
+                    <h2>Book course overview session <div class="getTicketFormTiltText" style="margin-top: 20px;">< It’s free</div></h2>
+    
+                    <input id="txtName" type="text" name="userName" placeholder="Your Name"><br>
+                    <label id="nameError"></label>
+    
+                    <input id="txtEmail" type="email" name="userEmail" placeholder="Enter Email Address"><br>
+                    <label id="emailError"></label>
+    
+                    <input id="txtNumber" type="text" name="userNumber" placeholder="Number"><br>
+                    <label id="numberError"></label>
+    
+                    <button class="btnGetTicket">Get a Ticket <img src="./images/btnTicketVector.svg"></button>
+                </form>
+            </div>
             
             <div class="batch-time-row">
                 <img src="./images/infoDark.svg" alt="">
@@ -167,7 +169,7 @@
 
     <div class="module-section">
        <div class="module-container-heading">
-            <h3>MODULE COVERED</h3>
+            <h3>MODULE <span style="position: relative;color: #CFCFCF;">COVERED <img class="moduleDel" src="./images/del3.svg"><sup style="position: absolute;" class="moduleTiltText">You’ll master</sup></span></h3>
        </div>
         <div class="module-flex-container">
             <div class="module-card1">

@@ -163,8 +163,3 @@ function handleLeavingForm(event){
     event.preventDefault();
     alert("hi")
 }
-
-window.onbeforeunload = function() {
-   document.getElementById("leavingPopup").style.display="flex"
-   document.querySelector("body").style.position="fixed"
-}
