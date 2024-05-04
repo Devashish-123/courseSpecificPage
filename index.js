@@ -13,6 +13,8 @@ function btnIgniteClick(){
     document.getElementById("batchIcon2").src="./images/ignitOrangeLogo.svg"
     document.getElementById("cardFlag1").style.border="1px solid #FFE9D9"
     document.getElementById("cardFlag2").style.border="1px solid #FFE9D9"
+    document.getElementById("cardFlag1").style.width="86px";
+    document.getElementById("cardFlag2").style.width="86px";
     
 
 
@@ -27,7 +29,7 @@ function btnIgniteClick(){
 
 function btnIntensiveClick(){
     document.getElementById("intesiveButton").style.backgroundImage="linear-gradient(to bottom, rgba(13, 153, 255, 1), rgba(82, 182, 255, 1), rgba(181, 224, 255, 1))";
-    document.getElementById("intesiveButton").style.color="#FFFFFF"
+    document.getElementById("intesiveButton").style.color="#FFFFFF";
     document.getElementById("intesiveButton").style.border="1.3px solid #B5E0FF";
     document.getElementById("intesiveButton").style.boxShadow="0px 4px 10px #92D2FF"
     document.getElementById("intesiveButton").style.fontWeight="600";
@@ -40,7 +42,9 @@ function btnIntensiveClick(){
     document.getElementById("batchIcon").src="./images/blueIntensive.svg"
     document.getElementById("batchIcon2").src="./images/blueIntensive.svg"
     document.getElementById("cardFlag1").style.border="1px solid #1EA0FF30"
-    document.getElementById("cardFlag2").style.border="1px solid #1EA0FF30"
+    document.getElementById("cardFlag2").style.border="1px solid #1EA0FF30";
+    document.getElementById("cardFlag1").style.width="111px";
+    document.getElementById("cardFlag2").style.width="111px";
  
 
     document.getElementById("igniteButton").style.backgroundImage="linear-gradient(#FFFFFF, #FFFFFF)"

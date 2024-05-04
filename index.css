@@ -75,6 +75,7 @@
     font-family: "Caveat", cursive;
     color: #9747FF;
     top: 0px;
+    left: 130px;
     transform: rotate(-10deg);
   }
   .expertDel{
@@ -239,7 +240,6 @@
 
 
 .hero-section{
-    border: 1px solid red;
     padding: 102px 179px 0px 179px;
     display: flex;
     justify-content: center;
@@ -408,8 +408,7 @@
     align-items: center;
     cursor: pointer;
     margin-top: 80px;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
-}
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);}
 .btnGetTicket img{
     width: 19.25px;
     height: 13.75px;
@@ -464,7 +463,7 @@
     background-image: linear-gradient(to bottom, #ffffff49, #fffffff4);
 }
 .module-card1,.module-card2,.module-card3,.module-card4,.module-card5,.module-card6,.module-card7,.module-card8,.module-card9 {
-    width: 349px;
+    width: 340px;
     height: 327px;
     border-radius: 11px;
     border: 0.5px solid #0000002E;
@@ -698,7 +697,7 @@
     width: 430px;
     height: 468px;
     border: 0.5px solid #E3E3E3;
-    box-shadow: 0px 2px 1px #0000001C;
+    box-shadow: 0px 0.25px 2px rgba(0, 0, 0, 0.15);
     border-radius: 14px;
     padding: 35px 25px 30px 25px;
     background-color: white;
@@ -711,7 +710,7 @@
 .batch-cards .card-1 .card-head h3, .card-2 .card-head h3{
     font-size: 30px;
     font-weight: 600;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 14px 0px;
 }
 .batch-cards .card-1 .card-head p, .card-2 .card-head p{
     margin: 0%;
@@ -722,8 +721,8 @@
 #cardFlag1, #cardFlag2{
     display: flex;
     align-items: center;
-    width: 92px;
-    height: 38px;
+    width: 86px;
+    height: 32px;
     border-radius: 100px;
     color: #FF6E00;
     border: 1px solid #FFE9D9;
@@ -732,7 +731,9 @@
     justify-content: center;
 }
 .batch-cards .card-flag img{
-    margin-right: 7px;
+    margin-right: 6.81px;
+    width: 12px;
+    height: 15px;
 }
 .batch-cards .card-1 .card-bod, .batch-cards .card-2 .card-bod{
     margin-top: 34px;
@@ -770,6 +771,7 @@
     border-width: 1px 1px 4px 1px;
     border-style:solid;
     border-color: #FFB5B5;
+    color: rgba(255, 102, 102, 1);
 }
 .week-days{
     font-weight: 400;
@@ -780,13 +782,17 @@
     margin-left: 9px;
     margin-right: 16px;
 }
+.batch-cards .card-1 .row-1 img, .batch-cards .card-2 .row-1 img{
+    margin: 0px 8px 0px 8px;
+}
 .batch-cards .card-2{
     margin-left: 40px;
 }
 .btnIgnitRegister{
     border: 1px solid #666666;
     border-radius: 150px;
-    background-image: linear-gradient(to bottom, #000000,#666666);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(45, 45, 45, 1));
     padding: 0%;
     width: 144px;
     height: 54px;
@@ -856,7 +862,7 @@
     margin: 58px 0px 0px 0px;
 }
 .mentor-container p:nth-child(4){
-    background-image: linear-gradient(to right bottom, #FFE75C, #FFC619,#FF78B9,#EB459F,#9747FF);
+    background-image: linear-gradient(to bottom,rgba(255, 231, 92, 1),  rgba(255, 198, 25, 1), rgba(255, 120, 185, 1), rgba(235, 69, 159, 1), rgba(151, 71, 255, 1));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 20px;
@@ -902,12 +908,12 @@
 }
 .cohort-range-section .range{
     width: 830px;
-    height: 20px;
+    height: 15px;
     background-color: #EEEEEE;
     border-radius: 18px;
 }
 .range-fill-1, .range-fill-2, .range-fill-3{
-    height: 20px;
+    height: 15px;
     border-radius: 18px;
     background-image: linear-gradient(to right,#FFE75C, #FFC619, #EB459F, #FF78B9, #AA69FF);
 }
@@ -917,9 +923,11 @@
 }
 .range-fill-2{
     width: 400px;
+    animation: slideRight2 2s ease;
 }
 .range-fill-3{
     width: 400px;
+    animation: slideRight2 2s ease;
 }
 .cohort-range-section p{
     margin: 10px 0px 0px 0px;
@@ -999,8 +1007,14 @@
     margin-top: 120px;
 }
 .recruiter-section marquee{
-    width: 1343px;
+    width: 100%;
     background-color: transparent;
+    display: none;
+}
+.static-marquee{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .recruiter-section h3{
     text-align: center;
@@ -1030,12 +1044,19 @@
     box-shadow: 0px 1px 0.75px #0000001C;
     border-radius: 14px;
     display: flex;
+    justify-content: space-between;
 }
 .swiper-container>div{
     /* border: 1px solid red; */
 }
+.swiper-container .scroller img{
+    width: 300px;
+    height: 267px;
+    border-radius: 14px;
+    margin-right: 20px;
+}
 .swiper-container h3{
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 600;
     margin:78px 0px 78px 33px;
     letter-spacing: -4%;
@@ -1053,7 +1074,7 @@
     /* border: 1px solid red; */
     margin-top: 20px;
 }
-.avgSalaray, .dzgnJamSalary{
+.avgSalaray{
     width: 350px;
     height: 121px;
     border: 0.5px solid #E3E3E3;
@@ -1084,7 +1105,18 @@
 }
 .dzgnJamSalary{
     margin-left: 16px;
-    background-image: radial-gradient(circle at center bottom,rgba(255, 231, 92, 0.29), rgba(255, 197, 25, 0.11), rgba(255, 120, 185, 0.241), rgba(235, 69, 160, 0.088), rgba(151, 71, 255, 0));
+    width: 350px;
+    height: 121px;
+    border: 0.5px solid rgba(255, 231, 92, 1);
+    border-radius: 14px;
+    border: double 0.5px transparent;
+    background-image: radial-gradient(at bottom center,rgba(235, 69, 160, 0),white, white),
+    linear-gradient(90deg, rgba(255, 231, 92, 1), rgba(255, 198, 25, 1), rgba(255, 120, 185, 1), rgba(235, 69, 159, 1), rgba(151, 71, 255, 1));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 /* salary button section ended */
 
@@ -1144,15 +1176,19 @@
     font-weight: 600;
     letter-spacing: -2%;
     margin: 27px 0px 20px 0px;
+    color: rgba(0, 0, 0, 1);
 }
 .designation{
-    margin: 0%;
+    margin: 0px 0px 8px 0px;
+    padding: 0%;
     font-size: 16px;
     font-weight: 400;
+    color: rgba(0, 0, 0, 1);
     letter-spacing: -2%;
 }
 .student-rating{
-    margin: 20px 0px 16px 0px;
+    margin: 0%;
+    padding: 0%;
 }
 .student-rating img{
     width: 10.50px;
@@ -1195,15 +1231,6 @@
 }
 /* certificate-section ended */
 
-  .accordion-item::after{
-    background-image: url("./images/add.svg");
-    background-size: cover;
-    transform: scale(0.4) !important;
-  }
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("./images/minus.svg");
-    background-size: cover;
-  }
   .faq-section{
     display: flex;
     justify-content: center;
@@ -1217,11 +1244,12 @@
   .question{
     font-size: 17px;
     font-weight: 500;
+    border-radius: 10px;
   }
+
   .accordion-button{
     border-radius: 10px;
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
+    border :none;
   }
   .accordion{
     width: 880px;
@@ -1238,9 +1266,10 @@
     font-size: 40px;
     font-weight: 500;
     margin: 0px 0px 79px 0px;
+    border-radius: 10px;
   }
 
-
+  
 
 /* faq-section ended */
 
@@ -1267,21 +1296,24 @@ footer .company-para{
     display: none;
 }
 .footer-navigate-row{
+    width: 496px;
+    /* height: 61px; */
     background-image: url("./images/footerNavImage.png");
     background-size: cover;
-    width: 496px;
-    height: 61px;
+    text-align: left;
+    border-radius: 9px;
+    color: white;
+    padding: 10px 0px 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 9px;
 }
 .footer-navigate-row p{
-    margin: 0px 0px 0px 24px;
     font-size: 14px;
     font-weight: 400;
-    color: #FFFFFF;
     width: 303px;
+    margin: 0%;
+    line-height: 15px;
 }
 .footer-navigate-row p a{
     color: #FFE75C;
@@ -1289,7 +1321,6 @@ footer .company-para{
 }
 .footer-navigate-row a{
     text-decoration: none;
-    border: none;
     background-color: transparent;
     margin-right: 20px;
 }
@@ -1510,7 +1541,7 @@ footer .right ul a{
         height: 8px;
         width: 123px;
         left: 5px;
-        top: 15px;
+        top: 18px;
     }
       .moduleTiltText{
         font-size: 22px;
@@ -1519,7 +1550,7 @@ footer .right ul a{
         font-family: "Caveat", cursive;
         color: #9747FF;
         top: 0px;
-        width: 150px;
+        width: 100px;
         margin-left: -60px;
         margin-top: -20px;
         transform: rotate(-10deg);
@@ -1886,9 +1917,11 @@ footer .right ul a{
     }
     .range-fill-2{
         width: 150px;
+        animation: slideRight 3s ease;
     }
     .range-fill-3{
         width: 150px;
+        animation: slideRight 4s ease;
     }
     .cohort-range-section p{
         margin: 8px 0px 0px 0px;
@@ -1943,6 +1976,10 @@ footer .right ul a{
     }
     .recruiter-section marquee{
         width: 100%;
+        display: flex;
+    }
+    .static-marquee{
+        display: none;
     }
     .recruiter-section h3{
         margin: 0px 0px 33px 0px;
@@ -1964,10 +2001,17 @@ footer .right ul a{
         flex-direction: column;
         align-items: center;
     }
+    .swiper-container .scroller img{
+        width: 280px;
+        height: 230px;
+        border-radius: 14px;
+        margin-right: 0px;
+
+    }
     .swiper-container h3{
         font-size: 30px;
         font-weight: 600;
-        margin: 51px 0px 48px 0px;
+        margin: 51px 0px 0px 0px;
         letter-spacing: -4%;
         text-align: center;
     }
@@ -2151,6 +2195,16 @@ footer .right ul a{
     }
     100%{
         width: 300px;
+        opacity: 1;
+    }
+}
+@keyframes slideRight2 {
+    0%{
+        width: 0%;
+        opacity: 1;
+    }
+    100%{
+        width: 400px;
         opacity: 1;
     }
 }
