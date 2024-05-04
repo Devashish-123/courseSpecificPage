@@ -1307,6 +1307,7 @@ footer .company-para{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.559);
 }
 .footer-navigate-row p{
     font-size: 14px;
@@ -2095,10 +2096,8 @@ footer .right ul a{
         display: none;
     }
     .footer-navigate-row{
-        background-image: url("./images/footerNavImageMobile.png");
-        background-size: cover;
+        background-image: url("./images/footerNavImage.png");
         width: 353px;
-        height: 83px;
         border-radius: 9px;
     }
     .footer-navigate-row p{
