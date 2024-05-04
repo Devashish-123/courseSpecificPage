@@ -1,7 +1,7 @@
 *, ::after, ::before{
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", sans-serif;
-  }
+}
   body{
     margin: 0%;
     padding: 0%;
@@ -1976,7 +1976,7 @@ footer .right ul a{
         margin-top: 68px;
     }
     .recruiter-section marquee{
-        width: 100%;
+        width: 375px;
         display: flex;
     }
     .static-marquee{
