@@ -1111,12 +1111,12 @@
     border-radius: 14px;
     border: double 0.5px transparent;
     background-image: radial-gradient(at bottom center,rgba(235, 69, 160, 0),white, white),
-    linear-gradient(90deg, rgba(255, 231, 92, 1), rgba(255, 198, 25, 1), rgba(255, 120, 185, 1), rgba(235, 69, 159, 1), rgba(151, 71, 255, 1));
+    linear-gradient(90deg,rgba(255, 120, 185, 0.93), rgba(255, 120, 185, 0.289), rgba(255, 120, 185, 0.607), rgba(255, 120, 185, 0.853));
     background-origin: border-box;
     background-clip: content-box, border-box;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 /* salary button section ended */
 
@@ -1908,7 +1908,7 @@ footer .right ul a{
 
     .cohort-range-section .range{
         width: 315px;
-        height: 20px;
+        height: 15px;
         background-color: #EEEEEE;
         border-radius: 18px;
     }
